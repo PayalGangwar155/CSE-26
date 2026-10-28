@@ -1,18 +1,7 @@
-let count = 0;
+const button = document.getElementById("generate");
+const number = document.getElementById("number");
 
-const display = document.getElementById("count");
-
-document.getElementById("increase").addEventListener("click", () => {
-  count++;
-  display.textContent = count;
-});
-
-document.getElementById("decrease").addEventListener("click", () => {
-  count--;
-  display.textContent = count;
-});
-
-document.getElementById("reset").addEventListener("click", () => {
-  count = 0;
-  display.textContent = count;
+button.addEventListener("click", function () {
+    let random = Math.floor(Math.random() * 10) + 1;
+    number.textContent = random;
 });
