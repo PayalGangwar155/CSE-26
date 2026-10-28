@@ -1,7 +1,6 @@
-const button = document.getElementById("generate");
-const number = document.getElementById("number");
+const text = document.getElementById("text");
+const count = document.getElementById("count");
 
-button.addEventListener("click", function () {
-    let random = Math.floor(Math.random() * 10) + 1;
-    number.textContent = random;
+text.addEventListener("input", function () {
+    count.textContent = text.value.length;
 });
